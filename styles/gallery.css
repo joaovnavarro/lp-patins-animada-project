@@ -114,3 +114,34 @@ section.gallery {
         transform: translateY(100%);
     }
 }
+
+@media (width <= 68rem) {
+    section.gallery  {
+        
+
+        & figure {
+            max-width: 488px;
+            /* width: 312px; */
+        }
+
+        & .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (width <= 45rem) {
+    section.gallery header {
+        gap: .5rem;
+        & span {
+            font-size: 0.75rem;
+        }
+
+        & h2 {
+            font-size: 2rem;
+        }
+    
+    }
+}

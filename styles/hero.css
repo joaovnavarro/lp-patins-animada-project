@@ -135,7 +135,7 @@ section.hero {
             transform: translateX(400%);
             animation: slideIn 2.2s 800ms ease both;
         }
-    }
+    }    
 }
 
 @keyframes slideIn {
@@ -224,5 +224,31 @@ section.hero {
     /*radical static - return*/
     100% {
         transform: translateY(-15rem);
+    }
+}
+
+@media (width <= 45rem) {
+    section.hero {
+        flex-direction: column-reverse;
+
+        & h1 {
+            zoom: 60%;
+        }
+
+        & .buttons {
+            flex-direction: column-reverse;
+            max-width: 284px;
+        }
+
+        & > div:nth-child(2){
+            max-width: 19.5rem;
+            height: 19.5rem;
+        }
+    }
+}
+
+@media (45rem < width < 80rem ) {
+    section.hero {
+        flex-direction: column-reverse;
     }
 }
